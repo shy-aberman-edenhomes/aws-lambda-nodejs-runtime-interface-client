@@ -2,6 +2,8 @@
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 set -e
 
+echo "Running postinstall script"
+
 if [ "$(uname)" = "Darwin" ]; then
     echo "aws-lambda-cpp does not build on OS X. Skipping the postinstall step."
 else

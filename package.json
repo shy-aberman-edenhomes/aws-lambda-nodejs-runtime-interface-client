@@ -14,7 +14,7 @@
     "postinstall": "./scripts/postinstall.sh",
     "postbuild": "npm run copy-files",
     "build": "cd src && node build.js && cd ..",
-    "build:gyp": "node-gyp rebuild",
+    "build:gyp": "node-gyp rebuild --verbose",
     "format": "npm run format:src && npm run format:test",
     "format:src": "prettier --check \"src/*.*js\" --write",
     "format:test": "prettier --check \"test/**/*.*js\" --write",

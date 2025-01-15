@@ -2,6 +2,8 @@
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 set -e
 
+echo "Running preinstall script"
+
 ARTIFACTS_DIR=$(pwd)/deps/artifacts
 
 if [ "$(uname)" = "Darwin" ]; then

@@ -2,6 +2,8 @@
 # Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 set -e
 
+echo "Running update_dependencies script"
+
 cd deps
 
 source versions
