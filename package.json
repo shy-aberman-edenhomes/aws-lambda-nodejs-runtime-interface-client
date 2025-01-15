@@ -11,6 +11,7 @@
     "copy-files": "mkdir -p dist && cp src/types/* dist/",
     "update-deps": "./scripts/update_dependencies.sh",
     "preinstall": "./scripts/preinstall.sh",
+    "install": "npm run build:gyp",
     "postinstall": "./scripts/postinstall.sh",
     "postbuild": "npm run copy-files",
     "build": "cd src && node build.js && cd ..",
